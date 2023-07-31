@@ -13,7 +13,7 @@ const forecast = (latitude, longitude, callback) => {
       callback("Not a valid Coordinate", undefined);
     } else {
       callback(undefined, 'It is '+ body.current.weather_descriptions +'. The temperature is '+ body.current.temperature +' degree and it feelslike '
-        + body.current.feelslike +' degree outside.'
+        + body.current.feelslike +' degree outside.'+'The Humidity is '+body.current.humidity +'.'
       );
     }
   });
